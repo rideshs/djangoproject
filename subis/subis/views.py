@@ -6,4 +6,6 @@ def aboutus(request):
 def contactus(request):
     return HttpResponse ("this is contact us page")
 def homepage(request):
-    return render (request,"index.html")
+    data={'title':'home naya'
+}
+    return render (request,"index.html",data)
