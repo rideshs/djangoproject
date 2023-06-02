@@ -8,8 +8,9 @@ def contactus(request):
 def homepage(request):
     data={'title':'home naya',
 
-    
-    
-    }
+     }
     
     return render (request,"index.html",data)
+def home(request):
+    data={'title':'home',}
+    return render (request, "home.html",data)
